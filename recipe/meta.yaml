@@ -1,5 +1,5 @@
 {% set name = "mysql-connector-python" %}
-{% set version = "8.0.32" %}
+{% set version = "8.3.0sgl1" %}
 {% set sha256 = "42b951f50e11bd1d04f5b596d9e3c48a5a3379403e5b87ca082b621869eade2e" %}
 
 package:
@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/mysql/mysql-connector-python/archive/{{ version }}.tar.gz
+  url: https://github.com/willmmiles/mysql-connector-python/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
     - patches/0001-Typecast-password-to-const-char-explicitly-py3.patch
