@@ -8,10 +8,10 @@ xref: https://github.com/protocolbuffers/protobuf/issues/9943
  src/mysqlxpb/mysqlxpb.cc | 6 +++---
  1 file changed, 3 insertions(+), 3 deletions(-)
 
-diff --git a/src/mysqlxpb/mysqlxpb.cc b/src/mysqlxpb/mysqlxpb.cc
+diff --git a/mysqlx-connector-python/src/mysqlxpb/mysqlxpb.cc b/mysqlx-connector-python/src/mysqlxpb/mysqlxpb.cc
 index 8d852a5..1b3aa72 100644
---- a/src/mysqlxpb/mysqlxpb.cc
-+++ b/src/mysqlxpb/mysqlxpb.cc
+--- a/mysqlx-connector-python/src/mysqlxpb/mysqlxpb.cc
++++ b/mysqlx-connector-python/src/mysqlxpb/mysqlxpb.cc
 @@ -439,14 +439,14 @@ static void AddPyListToMessageRepeatedString(
      google::protobuf::Message& message,
      const google::protobuf::FieldDescriptor& field,

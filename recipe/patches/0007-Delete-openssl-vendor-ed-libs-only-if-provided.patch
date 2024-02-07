@@ -9,8 +9,8 @@ Subject: [PATCH 7/7] Delete openssl (vendor-ed) libs only if provided
 
 diff --git a/cpydist/__init__.py b/cpydist/__init__.py
 index 8f518df..8f62ccb 100644
---- a/cpydist/__init__.py
-+++ b/cpydist/__init__.py
+--- a/mysql-connector-python/cpydist/__init__.py
++++ b/mysql-connector-python/cpydist/__init__.py
 @@ -230,7 +230,7 @@ class BaseCommand(Command):
              vendor_folder = os.path.join(os.getcwd(), self.vendor_folder)
              if os.path.exists(vendor_folder):

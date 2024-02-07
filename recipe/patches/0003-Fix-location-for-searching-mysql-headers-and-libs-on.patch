@@ -9,10 +9,10 @@ Subject: [PATCH 3/6] Fix location for searching mysql headers and libs on
  cpydist/utils.py    | 6 +++---
  2 files changed, 4 insertions(+), 4 deletions(-)
 
-diff --git a/cpydist/__init__.py b/cpydist/__init__.py
+diff --git a/mysql-connector-python/cpydist/__init__.py b/mysql-connector-python/cpydist/__init__.py
 index 1fedd55..200ed59 100644
---- a/cpydist/__init__.py
-+++ b/cpydist/__init__.py
+--- a/mysql-connector-python/cpydist/__init__.py
++++ b/mysql-connector-python/cpydist/__init__.py
 @@ -497,7 +497,7 @@ class BuildExt(build_ext, BaseCommand):
              mysql_version = f"{major}.{minor}.{patch}"
          elif os.name == "nt" and os.path.isdir(self.with_mysql_capi):
@@ -24,8 +24,8 @@ index 1fedd55..200ed59 100644
                  for line in fp.readlines():
 diff --git a/cpydist/utils.py b/cpydist/utils.py
 index 2a08e70..08cd421 100644
---- a/cpydist/utils.py
-+++ b/cpydist/utils.py
+--- a/mysql-connector-python/cpydist/utils.py
++++ b/mysql-connector-python/cpydist/utils.py
 @@ -157,7 +157,7 @@ def _mysql_c_api_info_win(mysql_capi):
          dict: A dict containing the information about the last commit.
      """

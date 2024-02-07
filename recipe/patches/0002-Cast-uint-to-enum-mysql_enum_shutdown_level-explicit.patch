@@ -15,10 +15,10 @@ int             STDCALL mysql_shutdown(MYSQL *mysql,
  src/mysql_capi.c | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/src/mysql_capi.c b/src/mysql_capi.c
+diff --git a/mysql-connector-python/src/mysql_capi.c b/mysql-connector-python/src/mysql_capi.c
 index 7a2f6e1..a55acc5 100644
---- a/src/mysql_capi.c
-+++ b/src/mysql_capi.c
+--- a/mysql-connector-python/src/mysql_capi.c
++++ b/mysql-connector-python/src/mysql_capi.c
 @@ -2899,7 +2899,7 @@ MySQL_shutdown(MySQL *self, PyObject *args)
      }
  

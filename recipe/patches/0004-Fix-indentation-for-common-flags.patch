@@ -9,8 +9,8 @@ Subject: [PATCH 4/6] Fix indentation for common flags
 
 diff --git a/cpydist/__init__.py b/cpydist/__init__.py
 index 200ed59..9a8ed9a 100644
---- a/cpydist/__init__.py
-+++ b/cpydist/__init__.py
+--- a/mysql-connector-python/cpydist/__init__.py
++++ b/mysql-connector-python/cpydist/__init__.py
 @@ -674,29 +674,29 @@ class BuildExt(build_ext, BaseCommand):
                      )
                      disabled.append(ext)

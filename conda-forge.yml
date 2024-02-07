@@ -10,7 +10,13 @@ conda_forge_output_validation: true
 github:
   branch_name: main
   tooling_branch_name: main
+  user_or_org: willmmiles
 provider:
   linux_aarch64: default
   win: azure
 test_on_native_only: true
+channels:
+  targets:
+    - ["wmiles_sgl", "main"]
+azure:
+  user_or_org: "wmiles-sgl"
