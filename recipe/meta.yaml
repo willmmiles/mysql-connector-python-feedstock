@@ -24,7 +24,7 @@ build:
   skip: true  # [win and py2k]
   script: # [unix]
     - PROTOBUF_INCLUDE_DIR=$PREFIX/include PROTOBUF_LIB_DIR=$PREFIX/lib PROTOC=$BUILD_PREFIX/bin/protoc MYSQL_CAPI=$PREFIX pip install .\mysql-connector-python --no-deps --verbose # [unix]
-    - PROTOBUF_INCLUDE_DIR=$PREFIX/include PROTOBUF_LIB_DIR=$PREFIX/lib PROTOC=$BUILD_PREFIX/bin/protoc MYSQL_CAPI=$PREFIX pip install .\mysqlx-connector-python --no-deps --verbose # [unix]
+    #- PROTOBUF_INCLUDE_DIR=$PREFIX/include PROTOBUF_LIB_DIR=$PREFIX/lib PROTOC=$BUILD_PREFIX/bin/protoc MYSQL_CAPI=$PREFIX pip install .\mysqlx-connector-python --no-deps --verbose # [unix]
   script: # [win]
     - set "PROTOBUF_INCLUDE_DIR=%LIBRARY_INC%"  # [win]
     - set "PROTOBUF_LIB_DIR=%LIBRARY_LIB%" # [win]
@@ -33,7 +33,7 @@ build:
     - set "CL=/DPROTOBUF_USE_DLLS"  # [win]
     - set "SKIP_VENDOR=1"  # [win]    
     - pip install .\mysql-connector-python --no-deps --verbose # [win]
-    - pip install .\mysqlx-connector-python --no-deps --verbose # [win]
+    #- pip install .\mysqlx-connector-python --no-deps --verbose # [win]
 
 
 requirements:
@@ -61,8 +61,8 @@ test:
   imports:
     - mysql
     - mysql.connector
-    - mysqlx
-    - mysqlx.protobuf
+    #- mysqlx
+    #- mysqlx.protobuf
 
 
 about:
